@@ -2,7 +2,7 @@
 // http://stackoverflow.com/a/13916669/461015
 var test = require('tape')
 var fs = require('fs')
-var tin = require('./')
+var planepoint = require('./')
 
 test('planepoint', function(t){
   var triangle = JSON.parse(fs.readFileSync(__dirname+'/geojson/Triangle.geojson'))
@@ -17,11 +17,10 @@ test('planepoint', function(t){
     }
   }
 
-  var z = t.planepoint(point, triangle)
+  var z = planepoint(point, triangle)
 
   t.ok(z, 'should return the z value of a point on a plane')
-  console.log(z)
-  
+
   t.end()
 })
 

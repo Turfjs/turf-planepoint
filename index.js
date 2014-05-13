@@ -16,9 +16,5 @@ module.exports = function(point, triangle, done){
       ((x-x1) * (y-y2) + (x-x2) * (y-y3) +(x-x3) * (y-y1) -
        (x-x1) * (y-y3) - (x-x2) * (y-y1) - (x-x3) * (y-y2))
 
-  done = done || function () {};
-
-  done(null, z)
-
   return z;
 }
