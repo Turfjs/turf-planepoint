@@ -4,6 +4,27 @@ turf-planepoint
 
 Takes a trianglular plane and calculates the z value for a point on the plane.
 
+###Install
+
+```sh
+npm install turf-planepoint
+```
+
+###Parameters
+
+|name|description|
+|---|---|
+|point|point to interpolate the z value for|
+|triangle|a triangle with a,b,c properties representing a plane|
+
+###Usage
+
+```js
+planepoint(point, triangle)
+```
+
+###Example
+
 ```javascript
 var planepoint = require('turf-planepoint')
 var point = require('turf-point')
