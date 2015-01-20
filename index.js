@@ -3,9 +3,9 @@
  * for a point on the plane.
  *
  * @module turf/planepoint
- * @param {Point} interpolatedPoint
- * @param {Array<Array<number>>} triangle
- * @return {number} the value at that point
+ * @param {Point} interpolatedPoint the Point for which a z-value will be calculated
+ * @param {Polygon} triangle a Polygon feature with three vertices
+ * @return {number} the z-value for `interpolatedPoint`
  * @example
  * var point = turf.point(-75.3221, 39.529);
  * // triangle is a polygon with "a", "b",
