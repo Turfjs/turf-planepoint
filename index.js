@@ -12,7 +12,7 @@
  * // and "c" values representing
  * // the values of the coordinates in order.
  * var triangle = turf.polygon(
- *   [[[-75.1221,39.57],[-75.58,39.18],[-75.97,39.86]]],
+ *   [[[-75.1221,39.57],[-75.58,39.18],[-75.97,39.86], [-75.1221, 39.57]]],
  *   {"a": 11, "b": 122, "c": 44});
  * var zValue = turf.planepoint(point, triangle);
  * //=zValue
