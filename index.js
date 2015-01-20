@@ -1,5 +1,5 @@
 /**
- * Takes a trianglular plane and calculates the z value
+ * Takes a trianglular plane as a {@link Polygon} feature and a {@link Point} feature on the plane and returns the z-value
  * for a point on the plane.
  *
  * @module turf/planepoint
