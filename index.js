@@ -7,7 +7,7 @@
  * @param {Polygon} triangle a Polygon feature with three vertices
  * @return {number} the z-value for `interpolatedPoint`
  * @example
- * var point = turf.point(-75.3221, 39.529);
+ * var point = turf.point([-75.3221, 39.529]);
  * // triangle is a polygon with "a", "b",
  * // and "c" values representing
  * // the values of the coordinates in order.
