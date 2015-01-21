@@ -1,6 +1,8 @@
 /**
- * Takes a trianglular plane as a {@link Polygon} feature and a {@link Point} feature on the plane and returns the z-value
- * for a point on the plane.
+ * Takes a triangular plane as a {@link Polygon} feature
+ * and a {@link Point} feature within that triangle and returns the z-value
+ * at that point. The Polygon needs to have properties `a`, `b`, and `c`
+ * that define the values at its three corners.
  *
  * @module turf/planepoint
  * @param {Point} interpolatedPoint the Point for which a z-value will be calculated
@@ -19,7 +21,7 @@
  *
  * //=zValue
  */
-module.exports = function(point, triangle, done){
+module.exports = function(point, triangle){
   var x = point.geometry.coordinates[0],
       y = point.geometry.coordinates[1],
       x1 = triangle.geometry.coordinates[0][0][0],
