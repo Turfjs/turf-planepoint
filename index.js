@@ -1,14 +1,14 @@
 /**
- * Takes a triangular plane as a {@link Polygon} feature
- * and a {@link Point} feature within that triangle and returns the z-value
+ * Takes a triangular plane as a {@link Polygon}
+ * and a {@link Point} within that triangle and returns the z-value
  * at that point. The Polygon needs to have properties `a`, `b`, and `c`
  * that define the values at its three corners.
  *
  * @module turf/planepoint
  * @category interpolation
- * @param {Point} interpolatedPoint the Point for which a z-value will be calculated
- * @param {Polygon} triangle a Polygon feature with three vertices
- * @return {number} the z-value for `interpolatedPoint`
+ * @param {Feature<Point>} interpolatedPoint the Point for which a z-value will be calculated
+ * @param {Feature<Polygon>} triangle a Polygon feature with three vertices
+ * @return {Number} the z-value for `interpolatedPoint`
  * @example
  * var point = {
  *   "type": "Feature",
