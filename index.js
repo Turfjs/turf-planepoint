@@ -51,7 +51,7 @@
  *
  * //=zValue
  */
-module.exports = function(point, triangle){
+module.exports = function(point, triangle) {
   var x = point.geometry.coordinates[0],
       y = point.geometry.coordinates[1],
       x1 = triangle.geometry.coordinates[0][0][0],
